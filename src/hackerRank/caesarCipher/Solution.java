@@ -4,21 +4,22 @@ public class Solution {
 
     private static char encryptChar(char c, int k) {
         if (Character.isAlphabetic(c)) {
-            char cryptChr = (char) (c + k % 26);
+            k = k % 26;
+            char cryptChr = (char) (c + k);
             if (((Character.isLowerCase(c)) && cryptChr > 'z')
-                    || ((Character.isUpperCase(c)) && cryptChr > 'Z')) return (char) (c - (26 -k % 26));
+                    || ((Character.isUpperCase(c)) && cryptChr > 'Z')) return (char) (c - (26 - k));
             else return cryptChr;
         } else return c;
     }
 
     private static String caesarCipher(String s, int k) {
-        
+
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
             sb.append(encryptChar(s.charAt(i), k));
         }
         return sb.toString();
-        
+
     }
 
     public static void main(String[] args) {
