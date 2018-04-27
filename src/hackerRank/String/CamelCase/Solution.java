@@ -1,4 +1,4 @@
-package hackerRank.CamelCase;
+package hackerRank.String.CamelCase;
 
 import java.util.*;
 

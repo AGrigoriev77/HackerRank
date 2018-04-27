@@ -1,10 +1,4 @@
-package hackerRank.marsExploration;
-
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+package hackerRank.String.marsExploration;
 
 public class Solution {
 

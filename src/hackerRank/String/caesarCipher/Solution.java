@@ -1,4 +1,4 @@
-package hackerRank.caesarCipher;
+package hackerRank.String.caesarCipher;
 
 public class Solution {
 

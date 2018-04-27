@@ -1,4 +1,4 @@
-package hackerRank.SuperReducedString;
+package hackerRank.String.SuperReducedString;
 
 import java.util.*;
 

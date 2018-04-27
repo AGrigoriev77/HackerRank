@@ -1,6 +1,5 @@
-package hackerRank.twoCharacters;
+package hackerRank.String.twoCharacters;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Solution {
