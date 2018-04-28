@@ -17,13 +17,9 @@ public class Solution {
         List<String> gemstone = new ArrayList<>();
 
         for (String s : arr) {
-            if (gemstone.size() == 0) {
-                gemstone = new ArrayList<>(getStrings(s));
-            }
+            if (gemstone.size() == 0) gemstone = new ArrayList<>(getStrings(s));
             gemstone = gemstone.stream().filter(getStrings(s)::contains).collect(Collectors.toList());
-            if (gemstone.size() == 0) {
-                return 0;
-            }
+            if (gemstone.size() == 0) return 0;
         }
 
         return gemstone.size();
